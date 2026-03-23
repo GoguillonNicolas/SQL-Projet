@@ -1,0 +1,19 @@
+# Dépendances Node.js (Commitizen)
+node_modules
+package-lock.json
+
+# Fichiers de configuration sensibles
+.env
+
+# Données de la base de données PostgreSQL (Docker volume local)
+postgres_data/
+
+# Fichiers systèmes ou générés par l'IDE
+.DS_Store
+.vscode/
+.idea/
+*.log
+
+# Sujet et documentations non suivies
+Sujet.md
+Développement SQL & NoSQL - Projet.pdf

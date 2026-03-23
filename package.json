@@ -1,0 +1,22 @@
+{
+  "name": "sql-projet",
+  "version": "1.0.0",
+  "description": "| Champ | Type | Contraintes | Description | |-------|------|-------------|-------------| | `id_etudiant` | INT | PRIMARY KEY | Identifiant | | `nom` | VARCHAR(100) | NOT NULL | Nom | | `prenom` | VARCHAR(100) | NOT NULL | Prénom | | `email` | VARCHAR(255) | UNIQUE, NOT NULL | Mail | | `statut` | VARCHAR(50) | | Statut actuel (en cours, réussite, échec) |",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
