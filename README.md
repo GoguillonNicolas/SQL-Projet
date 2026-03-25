@@ -22,6 +22,7 @@
 |-------|------|-------------|-------------|
 | `id_formation` | INT | PRIMARY KEY | Identifiant unique de la formation |
 | `nom_formation` | VARCHAR(255) | NOT NULL | Nom de la formation |
+| `duree_totale` | INT | NOT NULL | Durée totale prévue en heures |
 
 ## 4. Module (`module`)
 | Champ | Type | Contraintes | Description |
@@ -30,6 +31,7 @@
 | `id_formation` | INT | FOREIGN KEY | Référence à la formation |
 | `id_intervenant` | INT | FOREIGN KEY, NULL| Référence à l'intervenant |
 | `nom_module` | VARCHAR(255) | NOT NULL | Nom du module |
+| `duree` | INT | NOT NULL | Durée du module en heures |
 
 ## 5. Inscription (`inscription`)
 
