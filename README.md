@@ -50,4 +50,24 @@
 | `note` | DECIMAL(4,2) | NULL | Note sur 20 |
 | `date_evaluation` | DATE | NULL | Date de la saisie de la note |
 
+## Choix de conception
+
+**Tables principales :**
+- `etudiant`, `intervenant`, `module` et `formation`.
+
+**Tables de liaison :**
+- `inscription` : Permet de faire la jonction entre un étudiant et sa formation.
+- `evaluation` : Permet de faire la jonction entre un étudiant et un module via ses résultats.
+
+---
+
+## Instructions d'exécution du projet
+
+1. **Démarrer la base de données** : Exécuter un `docker-compose up -d` pour lancer Postgres (accessible sur [localhost:8080](http://localhost:8080) via Adminer).
+2. **Créer le schéma** : Exécuter le fichier `database.sql` pour créer les tables.
+3. **Insérer les données de test** : Exécuter le fichier `test_dataset.sql` pour peupler la base.
+
+
+## Note sur l'utilisation de l'IA
+Utilisation de Gemini pour mettre en forme les markdown et relire les textes rédigés, ainsi que pour les datasets SQL et NoSQL
 
