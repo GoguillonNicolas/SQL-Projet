@@ -39,6 +39,7 @@
 |-------|------|-------------|-------------|
 | `id_etudiant` | INT | PK, FOREIGN KEY | Référence à l'étudiant |
 | `id_formation` | INT | PK, FOREIGN KEY | Référence à la formation |
+| `date_inscription` | DATE | NOT NULL | Date d'inscription à la formation |
 
 ## 6. Évaluation (`evaluation`)
 

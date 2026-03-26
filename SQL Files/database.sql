@@ -30,6 +30,7 @@ CREATE TABLE module (
 CREATE TABLE inscription (
     id_etudiant UUID REFERENCES etudiant(id_etudiant) ON DELETE CASCADE,
     id_formation UUID REFERENCES formation(id_formation) ON DELETE CASCADE,
+    date_inscription DATE NOT NULL DEFAULT CURRENT_DATE,
     PRIMARY KEY (id_etudiant, id_formation)
 );
 
